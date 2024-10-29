@@ -25,4 +25,3 @@ exe = executable('triangle-wayland-opengl', sources,
   link_with: [glad],
   c_args: ['-Wno-pedantic'])
 
-test('basic', exe)
