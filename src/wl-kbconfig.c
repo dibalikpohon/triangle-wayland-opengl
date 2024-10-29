@@ -25,7 +25,7 @@ static void wl_keyboard_listener_key(void *data,
                                      uint32_t serial, uint32_t time,
                                      uint32_t key, uint32_t state) {
     struct state *s = (struct state*) data;
-    // s = NULL;   // Uncomment this to prevent segfaults (wink)
+    s = NULL;   // comment this to prevent segfaults (wink)
     if (key == 1) { // Escape Key
         puts("Quitting...");
         s->closed = 1;
